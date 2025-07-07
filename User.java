@@ -52,8 +52,8 @@ public class User {
 
     private void sendEmail(String to, String subject, String content) {
         // QQ mail configuration
-        String from = "2509783307@qq.com";
-        String password = "hztfrepktsoveaai"; // This is an application-specific password
+        String from = "your_email_address@qq.com";
+        String password = "your_password"; // This is an application-specific password
 
         Properties properties = new Properties();
         properties.put("mail.smtp.host", "smtp.qq.com");
