@@ -1,83 +1,154 @@
 # cps-2232-Final-Project
-Car Rental Management System
 
-Project Overview
-The Car Rental Management System (CRMS) is designed to enhance operational efficiency and user experience within the vehicle rental industry. This Java-based system supports car rental companies (administrators) and customers (users) by providing intuitive interfaces for vehicle management, rental transactions, and user authentication.
+# **Car Rental Management System (CRMS)**
 
-Key Features
-User Roles and Authentication:
+## **Project Overview**
 
-Admin: Manage vehicles, view rental logs, and maintain user accounts.
-Customer: Register, browse available vehicles, rent vehicles, and return vehicles.
-Vehicle Management:
+The **Car Rental Management System (CRMS)** is a Java-based application designed to streamline operations and enhance user experience in the car rental industry. This system serves both **administrators** (car rental companies) and **customers**, offering intuitive interfaces for managing vehicles, processing rental transactions, and handling user authentication.
 
-Administrators can add, view, update, and remove vehicles.
-Vehicles have detailed attributes like brand, model, color, capacity, rental price, and size.
-Rental Transactions:
+---
 
-Users can rent and return vehicles.
-Automatic updates of vehicle availability.
-Notification System:
+## **Key Features**
 
-Integrated with JavaMail API for sending rental confirmations and account notifications via email.
-Persistent Storage:
+### **1. User Roles & Authentication**
 
-Uses file-based storage for vehicle and user data (Vehicles.txt, Accounts.txt).
-Transaction logs maintained in Log.txt.
-Technologies Used
-Java (primary programming language)
-JavaMail API (email notifications)
-ArrayList (dynamic data handling)
-File I/O (persistent data storage)
-Project Structure
-CarRentalManagementSystem.java: Main class, handles user interaction and program initialization.
-RentalManager.java: Manages rental transactions, vehicle data, and email notifications.
-User.java: Represents user information, including authentication and role management.
-Vehicle.java: Defines vehicle attributes and availability management.
-Installation and Usage
-Requirements
-Java SE (version 8 or higher)
-JavaMail API
-Setup
-Clone the repository or download source files.
-Ensure Vehicles.txt, Accounts.txt, and Log.txt exist in the project's root directory.
-Configure your SMTP server details in the RentalManager class for email notifications.
-Running the Application
-Compile the Java files:
+* **Administrator**
 
+  * Manage the vehicle inventory (add, update, delete).
+  * View rental transaction logs.
+  * Maintain customer accounts.
+* **Customer**
+
+  * Register and log in to the system.
+  * Browse available vehicles.
+  * Rent and return vehicles.
+
+---
+
+### **2. Vehicle Management**
+
+* Administrators can:
+
+  * Add, view, update, and delete vehicle records.
+* Each vehicle includes attributes such as:
+
+  * Brand, model, color, capacity, rental price, size, and availability status.
+
+---
+
+### **3. Rental Transactions**
+
+* Customers can rent and return vehicles.
+* Vehicle availability is automatically updated based on transactions.
+* All rental activities are logged and recorded in the system.
+
+---
+
+### **4. Notification System**
+
+* Integrated with the **JavaMail API**.
+* Sends rental confirmations and account-related notifications via email.
+
+---
+
+### **5. Persistent Storage**
+
+* File-based storage is used for data management:
+
+  * **Vehicles.txt** – Stores all vehicle information.
+  * **Accounts.txt** – Stores user account data.
+  * **Log.txt** – Maintains all transaction logs.
+
+---
+
+## **Technologies Used**
+
+* **Java** – Core programming language.
+* **JavaMail API** – For sending email notifications.
+* **ArrayList** – Used for dynamic data manipulation.
+* **File I/O** – For persistent file-based data storage.
+
+---
+
+## **Project Structure**
+
+* **CarRentalManagementSystem.java** – Main class; handles user interaction and system initialization.
+* **RentalManager.java** – Manages rentals, vehicle availability, and email notifications.
+* **User.java** – Defines user properties and handles login/authentication.
+* **Vehicle.java** – Defines vehicle attributes and availability status.
+
+---
+
+## **Installation & Usage**
+
+### **Requirements**
+
+* Java SE (Version 8 or above)
+* JavaMail API
+
+### **Setup**
+
+1. Clone the repository or download the source code.
+2. Ensure the following files exist in the project root directory:
+
+   * `Vehicles.txt`
+   * `Accounts.txt`
+   * `Log.txt`
+3. Configure SMTP server details in the `RentalManager.java` file for email notifications.
+
+### **Running the Application**
+
+Compile the source files:
+
+```bash
 javac *.java
-Execute the main program:
+```
 
+Run the main program:
+
+```bash
 java CarRentalManagementSystem
-Functionalities
-Admin Features
-Add/Delete vehicles
-View all vehicles
-Access transaction logs
-Customer Features
-Account creation and login
-Browse available vehicles
-Rent and return vehicles
-Receive transaction confirmation emails
-Future Enhancements
-Improve email notification reliability
-Enhanced filtering and search functionality
-Expansion of the system to support more advanced management features
+```
 
+---
 
-Contribution of Group Members
-Student Name: Mi Yixuan                                                Student Number: 1307943
-Make UML master table, code integration, project experiment debug, report writing
+## **Functionalities**
 
-Student Name: Yu Yiduo                                                  Student Number: 1306057
-CarRentalManagementSystem class design, report writing
+### **Admin Features**
 
-Student Name: Zhao Yiyi                                                 Student Number: 1305974
-Rental Manager class design, report writing
+* Add or delete vehicle records.
+* View all vehicles.
+* Access complete rental transaction logs.
 
-Student Name: Yu Qiyang                                                Student Number: 1306031
-User class design and establishment of relevant user structure, report writing
+### **Customer Features**
 
-Student Name: Jia Taoyin                                                 Student Number: 1306194
-Vehicle class design and establishment of vehicle database, report writing
+* Create an account and log in.
+* Browse available cars for rent.
+* Rent and return vehicles.
+* Receive transaction confirmation emails.
+
+---
+
+## **Future Enhancements**
+
+* Improve the stability and reliability of email notifications.
+* Add advanced vehicle search and filtering options.
+* Expand the system with more sophisticated management features (e.g., payment integration, analytics dashboard).
+
+---
+
+## **Contribution of Group Members**
+
+| Name           | Student Number | Contribution                                                                              |
+| -------------- | -------------- | ----------------------------------------------------------------------------------------- |
+| **Mi Yixuan**  | 1307943        | Created UML master table, integrated code, debugged project, wrote the report.            |
+| **Yu Yiduo**   | 1306057        | Designed the `CarRentalManagementSystem` class, contributed to report writing.            |
+| **Zhao Yiyi**  | 1305974        | Developed the `RentalManager` class, contributed to report writing.                       |
+| **Yu Qiyang**  | 1306031        | Designed the `User` class and user data structure, contributed to report writing.         |
+| **Jia Taoyin** | 1306194        | Designed the `Vehicle` class and managed vehicle database, contributed to report writing. |
+
+---
+
+如需将该内容导出为PDF版、PPT展示稿、或中英对照版本，请随时告诉我。
+
 
