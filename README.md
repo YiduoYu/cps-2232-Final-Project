@@ -144,8 +144,5 @@ java CarRentalManagementSystem
 | **Yu Qiyang**  | 1306031        | Designed the `User` class and user data structure, contributed to report writing.         |
 | **Jia Taoyin** | 1306194        | Designed the `Vehicle` class and managed vehicle database, contributed to report writing. |
 
----
-
-如需将该内容导出为PDF版、PPT展示稿、或中英对照版本，请随时告诉我。
 
 
