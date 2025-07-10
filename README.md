@@ -4,7 +4,6 @@
 
 The **Car Rental Management System (CRMS)** is a Java-based application designed to streamline operations and enhance user experience in the car rental industry. This system serves both **administrators** (car rental companies) and **customers**, offering intuitive interfaces for managing vehicles, processing rental transactions, and handling user authentication.
 
----
 
 ## **Key Features**
 
