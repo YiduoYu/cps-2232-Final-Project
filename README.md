@@ -1,6 +1,4 @@
-# cps-2232-Final-Project
-
-# **Car Rental Management System (CRMS)**
+# cps-2232-Final-Project —— **Car Rental Management System (CRMS)**
 
 ## **Project Overview**
 
